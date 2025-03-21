@@ -1,12 +1,14 @@
 body {
 
-    background-color: rgb(200, 235, 243);
+    background-color: rgb(247, 241, 235);
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     gap: 20px;
 
 }
+
+
 
 i {
 
@@ -64,6 +66,36 @@ i {
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 10px;
+    box-shadow:0 6px 10px;
+
+}
+
+button {
+
+    background-color: rgb(83, 83, 240);
+    color:white;
+    font-size:16px;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    margin:0 5px;
+    cursor:pointer;
+
+}
+
+button:hover {
+
+    background-color:white;
+    color:rgb(83, 83, 240);
+    box-shadow: 0 6px 10px;
+
+}
+
+#srcBar {
+
+    width:75%;
+    border-radius: 10px;
+    background-color: rgb(247, 241, 235);
 
 }
 
@@ -93,6 +125,7 @@ i {
 .header-bottom {
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -115,6 +148,100 @@ i {
 
 .main {
 
+   background-color:rgb(247, 241, 235);
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-template-rows: auto 1fr; 
+   
+   
+}
+
+
+.main > h1,
+.main-right > h1:first-of-type {
+    margin-bottom: 10px;
+}
+
+
+.project {
+
     background-color: white;
+    border-radius:8px;
+    margin: 15px;
+    padding:15px;
+    box-shadow:5px 10px 10px;
+    position: relative;
 
 }
+
+.project::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px; 
+    height: 100%;
+    background-color: #f0856d; 
+    border-top-left-radius: 8px; 
+}
+
+
+
+.projects {
+
+    grid-column:1;
+    grid-row:2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px,1fr));
+
+}
+
+
+
+
+.main-right {
+
+    grid-column: 2;
+    grid-row:2;
+    
+}
+
+#ann {
+
+    grid-column: 2;
+    grid-row:1;
+    margin-left: 25px;
+}
+
+
+
+.right-top {
+
+    background-color: white;
+    border-radius:8px;
+    margin: 15px;
+    padding:15px;
+    box-shadow:5px 10px 10px;
+
+}
+
+.tren {
+
+    background-color: white;
+    border-radius:8px;
+    margin: 15px;
+    padding:15px;
+    box-shadow:5px 10px 10px;
+
+}
+
+#tre {
+
+    margin-left: 25px;
+
+}
+
+
+
+
