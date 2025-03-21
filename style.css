@@ -1,0 +1,120 @@
+body {
+
+    background-color: rgb(200, 235, 243);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 20px;
+
+}
+
+i {
+
+    font-size:18px;
+
+    
+    
+}
+
+.sidebar {
+
+    background-color: rgb(83, 83, 240);
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr 0.3fr 1fr;
+    gap:50px;
+    
+
+    
+}
+
+.sidebar > * {
+
+    margin-left: 15px;    
+   
+    
+}
+
+
+.dash {
+
+    font-size:22px;
+    padding-top:12px;
+}
+
+.h-c {
+
+    display: grid;
+
+}
+
+.s-p {
+
+    display: grid;
+
+}
+
+
+
+.header {
+
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+
+}
+
+.header-top {
+
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    margin-top: 18px;
+    
+
+}
+
+.header-top div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+
+.header-top div > p {
+
+    margin:0;
+
+}
+
+
+.header-bottom {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.header-bottom-left {
+
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.header-bottom-left p,
+.header-bottom-left h1 {
+    margin: 0;
+}
+
+
+
+
+.main {
+
+    background-color: white;
+
+}
